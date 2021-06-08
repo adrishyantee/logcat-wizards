@@ -20,7 +20,7 @@ import java.util.Map;
 public class NormalActivity extends AppCompatActivity {
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+    String TAG = "User Sign Up";
     EditText FullName,Emailadr,PhoneNumber,Pass;
     Button Submitbtn;
 
@@ -36,15 +36,14 @@ public class NormalActivity extends AppCompatActivity {
         PhoneNumber = findViewById(R.id.phone);
         Pass = findViewById(R.id.password);
         Submitbtn = findViewById(R.id.submit);
-
+                String email = Emailadr.getText().toString().trim();
+                String passwrd = Emailadr.getText().toString().trim();
+                String name = FullName.getText().toString().trim();
 
         Submitbtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-//                String Email = Emailadr.getText().toString().trim();
-//                String passwrd = Emailadr.getText().toString().trim();
-//                String Name = FullName.getText().toString().trim();
-//                long phnumber = PhoneNumber.toLong();
+
 //
 //                //checking if user name is  empty
 //                if(TextUtils.isEmpty(Name)){
@@ -75,31 +74,28 @@ public class NormalActivity extends AppCompatActivity {
 //                    PhoneNumber.setError("phone number should be of 10 digits");
 //                    return;
 //                }
-            }
-        });
-    }
-}
-//    // Create a new user with a first and last name
-//    Map<String, Object> user = new HashMap<>();
-//user.put("first", "Ada");
-//user.put("last", "Lovelace");
-//user.put("born", 1815);
-//
-//// Add a new document with a generated ID
-//db.collection("users")
-//        .add(user)
-//        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-//        @Override
-//        public void onSuccess(DocumentReference documentReference) {
-//            Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-//        }
-//    })
-//            .addOnFailureListener(new OnFailureListener() {
-//        @Override
-//        public void onFailure(@NonNull Exception e) {
-//            Log.w(TAG, "Error adding document", e);
-//        }
-//    });
+
+
+    Map<String, Object> user = new HashMap<>();
+user.put("name", name);
+user.put("email", email);
+user.put("phone", 000);
+user.put("password", passwrd );
+
+db.collection("users")
+        .add(user)
+        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+        @Override
+        public void onSuccess(DocumentReference documentReference) {
+            Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+        }
+    })
+            .addOnFailureListener(new OnFailureListener() {
+        @Override
+        public void onFailure(@NonNull Exception e) {
+            Log.w(TAG, "Error adding document", e);
+        }
+    });
 
 //    // Create a new user with a first, middle, and last name
 //    Map<String, Object> user = new HashMap<>();
@@ -123,3 +119,7 @@ public class NormalActivity extends AppCompatActivity {
 //        Log.w(TAG, "Error adding document", e);
 //        }
 //        });
+            }
+        });
+    }
+}
