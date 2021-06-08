@@ -36,10 +36,11 @@ public class NormalActivity extends AppCompatActivity {
         PhoneNumber = findViewById(R.id.phone);
         Pass = findViewById(R.id.password);
         Submitbtn = findViewById(R.id.submit);
-                String email = Emailadr.getText().toString().trim();
-                String passwrd = Emailadr.getText().toString().trim();
-                String name = FullName.getText().toString().trim();
-                String phnumber=PhoneNumber.getText().toString();
+
+        String email = Emailadr.getText().toString();
+        String passwrd = Pass.getText().toString();
+        String name = FullName.getText().toString();
+        String phnumber=PhoneNumber.getText().toString();
 
         Submitbtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -78,11 +79,11 @@ public class NormalActivity extends AppCompatActivity {
 //                }
 
 
-    Map<String, Object> user = new HashMap<>();
-user.put("name", name);
-user.put("email", email);
-user.put("phone", 000);
-user.put("password", passwrd );
+Map<String, Object> user = new HashMap<>();
+user.put("name",name);
+user.put("email",email);
+user.put("phone",phnumber);
+user.put("password",passwrd);
 
 db.collection("users")
         .add(user)
@@ -98,29 +99,6 @@ db.collection("users")
             Log.w(TAG, "Error adding document", e);
         }
     });
-
-//    // Create a new user with a first, middle, and last name
-//    Map<String, Object> user = new HashMap<>();
-//user.put("first", "Alan");
-//        user.put("middle", "Mathison");
-//        user.put("last", "Turing");
-//        user.put("born", 1912);
-//
-//// Add a new document with a generated ID
-//        db.collection("users")
-//        .add(user)
-//        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-//@Override
-//public void onSuccess(DocumentReference documentReference) {
-//        Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-//        }
-//        })
-//        .addOnFailureListener(new OnFailureListener() {
-//@Override
-//public void onFailure(@NonNull Exception e) {
-//        Log.w(TAG, "Error adding document", e);
-//        }
-//        });
             }
         });
     }
