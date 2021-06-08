@@ -1,4 +1,4 @@
-package com.example.hackathontrial;
+package com.example.logcathealth;
 
 import android.content.Context;
 

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hackathontrial">
+    package="com.example.logcathealth">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="LogCat Health"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HackathonTrial">
-        <activity android:name=".NormalActivity"
-            android:parentActivityName=".SignUpActivity"></activity>
+        <activity android:name="com.example.logcathealth.NormalActivity"
+            android:parentActivityName="com.example.logcathealth.SignUpActivity"></activity>
         <activity
-            android:name=".SignUpActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:name="com.example.logcathealth.SignUpActivity"
+            android:parentActivityName="com.example.logcathealth.MainActivity" />
+        <activity android:name="com.example.logcathealth.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
