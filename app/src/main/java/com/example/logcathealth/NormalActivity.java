@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -45,39 +46,45 @@ public class NormalActivity extends AppCompatActivity {
         Submitbtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                String email = Emailadr.getText().toString();
+                String passwrd = Pass.getText().toString();
+                String name = FullName.getText().toString();
+                String phnumber=PhoneNumber.getText().toString();
 
-//
-//                //checking if user name is  empty
-//                if(TextUtils.isEmpty(Name)){
-//                    FullName.setError("Enter name");
-//                    return;
-//                }
-//
-//                //checking  if email name is  empty
-//                if(TextUtils.isEmpty(Email)){
-//                    Emailadr.setError("Enter email address");
-//                    return;
-//                }
-//
-//                //checking  if password name is  empty
-//                if(TextUtils.isEmpty(passwrd)){
-//                    Emailadr.setError("Enter the password");
-//                    return;
-//                }
-//
-//                //checking  if password length is 8 gigits or longer
-//                if(password.length() < 8){
-//                    Pass.setError("password should be 0f 8 characters or greater");
-//                    return;
-//                }
-//
-//                //checking  if pone number is leass than 10 digits
-//                int phnlen=phnumber.length();
-//                if(phnlen!=10){
-//                    PhoneNumber.setError("phone number should be of 10 digits");
-//                    return;
-//                }
+                //checking  if email name is  empty
+                if(name.equals("")){
+                    FullName.setError("Enter Name");
+                    return;
+                }
 
+                //checking  if email name is  empty
+                if(email.equals("")){
+                    Emailadr.setError("Enter email address");
+                    return;
+                }
+
+                //checking  if password name is  empty
+                if(passwrd.equals("")){
+                    Pass.setError("Enter the password");
+                    return;
+                }
+
+                //checking  if password length is 8 gigits or longer
+                if(passwrd.length() < 8){
+                    Pass.setError("Password should be Minimum 8 Characters");
+                    return;
+                }
+
+                if(phnumber.equals("")){
+                    Emailadr.setError("Enter Phone Number");
+                    return;
+                }
+                //checking  if pone number is leass than 10 digits
+                int phnlen=phnumber.length();
+                if(phnlen!=10){
+                    PhoneNumber.setError("Enter 10 digits");
+                    return;
+                }
 
 Map<String, Object> user = new HashMap<>();
 user.put("name",name);
