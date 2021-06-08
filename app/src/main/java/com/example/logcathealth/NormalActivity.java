@@ -39,6 +39,7 @@ public class NormalActivity extends AppCompatActivity {
                 String email = Emailadr.getText().toString().trim();
                 String passwrd = Emailadr.getText().toString().trim();
                 String name = FullName.getText().toString().trim();
+                String phnumber=PhoneNumber.getText().toString();
 
         Submitbtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -70,7 +71,8 @@ public class NormalActivity extends AppCompatActivity {
 //                }
 //
 //                //checking  if pone number is leass than 10 digits
-//                if(phnumber<=999999999){
+//                int phnlen=phnumber.length();
+//                if(phnlen!=10){
 //                    PhoneNumber.setError("phone number should be of 10 digits");
 //                    return;
 //                }

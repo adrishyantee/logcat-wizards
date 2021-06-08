@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffafbd"
+    tools:context=".DocActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hackathon_logo_2" />
+
+    <EditText
+        android:id="@+id/docname"
+        android:layout_width="248dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="60dp"
+        android:background="#F1DEDE"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/docemail"
+        android:layout_width="246dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:background="#F1DEDE"
+        android:ems="10"
+        android:hint="Email@xyz.com"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docname" />
+
+    <EditText
+        android:id="@+id/docphone"
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="24dp"
+        android:background="#F1DEDE"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:paddingLeft="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docemail" />
+
+    <EditText
+        android:id="@+id/regnum"
+        android:layout_width="243dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:background="#F1DEDE"
+        android:ems="10"
+        android:hint="Registration Number"
+        android:inputType="number"
+        android:paddingLeft="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docphone" />
+
+    <EditText
+        android:id="@+id/docpass"
+        android:layout_width="245dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:background="#F1DEDE"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/docsubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regnum"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <Button
+        android:id="@+id/docsubmit"
+        android:layout_width="198dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="32dp"
+        android:text="Sign  Up!"
+        android:textSize="25sp"
+        app:backgroundTint="#0869b9"
+        app:cornerRadius="66dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

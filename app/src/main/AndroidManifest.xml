@@ -9,13 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HackathonTrial">
+        <activity android:name=".DocAcivity"></activity>
+        <activity android:name=".LogInActivity" />
         <activity
-            android:name="com.example.logcathealth.NormalActivity"
-            android:parentActivityName="com.example.logcathealth.SignUpActivity" />
+            android:name=".NormalActivity"
+            android:parentActivityName=".SignUpActivity" />
         <activity
-            android:name="com.example.logcathealth.SignUpActivity"
-            android:parentActivityName="com.example.logcathealth.MainActivity" />
-        <activity android:name="com.example.logcathealth.MainActivity">
+            android:name=".SignUpActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
