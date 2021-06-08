@@ -6,7 +6,7 @@
     <string name="phone_number">Phone number</string>
     <string name="password">Password</string>
     <string name="log_in">Log in!</string>
-    <string name="sign_up">Sign Up!</string>
     <string name="app_icon">App_Icon</string>
     <string name="sign_up">Sign Up!</string>
+    <string name="normal_user">Normal User</string>
 </resources>

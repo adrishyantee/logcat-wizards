@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HackathonTrial">
-        <activity android:name="com.example.logcathealth.NormalActivity"
-            android:parentActivityName="com.example.logcathealth.SignUpActivity"></activity>
+        <activity
+            android:name="com.example.logcathealth.NormalActivity"
+            android:parentActivityName="com.example.logcathealth.SignUpActivity" />
         <activity
             android:name="com.example.logcathealth.SignUpActivity"
             android:parentActivityName="com.example.logcathealth.MainActivity" />

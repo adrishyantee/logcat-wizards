@@ -16,14 +16,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hackathon_logo_2" />
+        app:srcCompat="@drawable/hackathon_logo_2"
+        android:contentDescription="@string/app_icon" />
 
     <Button
         android:id="@+id/normal"
         android:layout_width="234dp"
         android:layout_height="84dp"
         android:layout_marginTop="100dp"
-        android:text="Normal User"
+        android:text="@string/normal_user"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:backgroundTint="#0869b9"
