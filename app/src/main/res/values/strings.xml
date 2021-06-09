@@ -11,4 +11,5 @@
     <string name="email_xyz_com">Email@xyz.com</string>
     <string name="phone_number">Phone number</string>
     <string name="registration_number">Registration Number</string>
+    <string name="hello">Hello</string>
 </resources>

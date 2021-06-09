@@ -19,14 +19,14 @@
         app:srcCompat="@drawable/hackathon_logo_2" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/email"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_marginTop="64dp"
         android:background="@drawable/rounded_corners"
         android:ems="10"
-        android:hint="@string/user_name"
-        android:inputType="textPersonName"
+        android:hint="@string/email_xyz_com"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
         android:id="@+id/loginsub"
