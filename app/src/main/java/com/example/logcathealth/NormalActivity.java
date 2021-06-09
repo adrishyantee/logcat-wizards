@@ -38,11 +38,6 @@ public class NormalActivity extends AppCompatActivity {
         Pass = findViewById(R.id.password);
         Submitbtn = findViewById(R.id.submit);
 
-        String email = Emailadr.getText().toString();
-        String passwrd = Pass.getText().toString();
-        String name = FullName.getText().toString();
-        String phnumber=PhoneNumber.getText().toString();
-
         Submitbtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){

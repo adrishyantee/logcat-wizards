@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1010704235448",
+    "project_id": "logcat-wizards",
+    "storage_bucket": "logcat-wizards.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010704235448:android:a9b55ba2b221430eba2d4d",
+        "android_client_info": {
+          "package_name": "com.example.logcathealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010704235448-ubs7pqljqg84srpe589cv9e66h1er4qm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoGe7NSbboXAdqZ0ihL1WF_ghlqzRVQm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010704235448-ubs7pqljqg84srpe589cv9e66h1er4qm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

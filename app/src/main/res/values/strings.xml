@@ -2,11 +2,13 @@
     <string name="app_name">Hackathon trial</string>
     <string name="or">OR</string>
     <string name="name">Name</string>
-    <string name="email_xyz_com">Email@xyz.com</string>
-    <string name="phone_number">Phone number</string>
-    <string name="password">Password</string>
     <string name="log_in">Log in!</string>
     <string name="app_icon">App_Icon</string>
     <string name="sign_up">Sign Up!</string>
     <string name="normal_user">Normal User</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="email_xyz_com">Email@xyz.com</string>
+    <string name="phone_number">Phone number</string>
+    <string name="registration_number">Registration Number</string>
 </resources>
