@@ -27,5 +27,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,LogInActivity.class);
+//                intent.putExtra(MSG,"Second activity launch successful");
+                startActivity(intent);
+            }
+        });
     }
 }

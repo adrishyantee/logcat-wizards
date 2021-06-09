@@ -41,8 +41,8 @@ Button normal,doc,ven;
         doc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent=new Intent(SignUpActivity.this,DocActivity.class);
-//                startActivity(intent);
+                Intent intent=new Intent(SignUpActivity.this,DocActivity.class);
+                startActivity(intent);
             }
         });
 
