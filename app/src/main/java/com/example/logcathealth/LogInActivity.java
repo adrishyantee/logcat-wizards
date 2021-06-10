@@ -56,7 +56,7 @@ public class LogInActivity extends AppCompatActivity {
                                             for (QueryDocumentSnapshot document : Objects.requireNonNull(task.getResult())) {
                                                String password = document.get("password").toString();
                                                if(password.equals(pass)) {
-                                                   Intent intent = new Intent(LogInActivity.this, Demo.class);
+                                                   Intent intent = new Intent(LogInActivity.this, BottomNavigation.class);
                                                    startActivity(intent);
                                                    break;
                                                }

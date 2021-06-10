@@ -13,23 +13,23 @@ import com.example.logcathealth.R;
 
 import org.jetbrains.annotations.NotNull;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
+public class DocCornerAdapter extends RecyclerView.Adapter<DocCornerAdapter.ViewHolder> {
     private Context context;
 
-    public RecyclerViewAdapter() {
+    public DocCornerAdapter() {
     }
 
     @NonNull
     @NotNull
     @Override
-    public RecyclerViewAdapter.ViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
+    public DocCornerAdapter.ViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.row,parent,false);
 
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull @NotNull RecyclerViewAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull @NotNull DocCornerAdapter.ViewHolder holder, int position) {
         //populate
 //        holder.Docname.setText();
 //        holder.spec.setText();
