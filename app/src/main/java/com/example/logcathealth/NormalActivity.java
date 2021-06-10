@@ -3,6 +3,7 @@ package com.example.logcathealth;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -101,6 +102,8 @@ db.collection("users")
             Log.w(TAG, "Error adding document", e);
         }
     });
+                Intent intent=new Intent(NormalActivity.this, DocCornerActivity.class);
+                startActivity(intent);
             }
         });
     }
