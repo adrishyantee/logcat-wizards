@@ -1,7 +1,6 @@
 package com.example.logcathealth.BottomNav;
 
 import android.view.LayoutInflater;
-import com.example.logcathealth.BottomNav.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;

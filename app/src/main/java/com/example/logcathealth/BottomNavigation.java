@@ -15,8 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.logcathealth.databinding.ActivityBottomNavigationBinding;
-
 import java.util.List;
 
 public class BottomNavigation extends AppCompatActivity implements ClickedCallBack {
