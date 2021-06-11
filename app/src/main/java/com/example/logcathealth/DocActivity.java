@@ -22,7 +22,7 @@ public class DocActivity extends AppCompatActivity {
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     String TAG = "Doctor Sign Up";
-    EditText FullName,Emailadr,PhoneNumber,Pass, RegNum;
+    EditText FullName,Emailadr,PhoneNumber,Pass, RegNum, Spec, Time;
     Button Submitbtn;
 
     @Override
@@ -37,6 +37,8 @@ public class DocActivity extends AppCompatActivity {
         Pass = findViewById(R.id.docpass);
         RegNum = findViewById(R.id.regnum);
         Submitbtn = findViewById(R.id.docsubmit);
+        Time = findViewById(R.id.availabletime);
+        Spec = findViewById(R.id.speci);
 
         Submitbtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -46,6 +48,9 @@ public class DocActivity extends AppCompatActivity {
                 String name = FullName.getText().toString();
                 String phnumber=PhoneNumber.getText().toString();
                 String regNum=RegNum.getText().toString();
+                String spec = Spec.getText().toString();
+                String time = Spec.getText().toString();
+
 
                 //checking  if email name is  empty
                 if(name.equals("")){
@@ -94,6 +99,8 @@ public class DocActivity extends AppCompatActivity {
                 doctor.put("phone",phnumber);
                 doctor.put("password",passwrd);
                 doctor.put("regno",regNum);
+                doctor.put("spec",spec);
+                doctor.put("time",time);
 
                 db.collection("doctors")
                         .add(doctor)

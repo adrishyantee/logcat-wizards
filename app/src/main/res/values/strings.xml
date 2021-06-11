@@ -4,7 +4,6 @@
     <string name="name">Name</string>
     <string name="log_in">Log in!</string>
     <string name="app_icon">App_Icon</string>
-    <string name="sign_up">Sign Up!</string>
     <string name="normal_user">Normal User</string>
     <string name="user_name">User Name</string>
     <string name="password">Password</string>
@@ -26,4 +25,6 @@
     <string name="menuicon">MenuIcon</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="specifications">Specifications</string>
+    <string name="sign_up">Sign Up!</string>
 </resources>

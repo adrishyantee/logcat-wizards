@@ -11,7 +11,7 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/docname"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rounded_corners"
         android:ems="10"
         android:hint="@string/name"
@@ -36,7 +36,7 @@
         android:id="@+id/docemail"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rounded_corners"
         android:ems="10"
         android:hint="@string/email_xyz_com"
@@ -50,7 +50,7 @@
         android:id="@+id/docphone"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rounded_corners"
         android:ems="10"
         android:hint="@string/phone_number"
@@ -64,7 +64,7 @@
         android:id="@+id/regnum"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rounded_corners"
         android:ems="10"
         android:hint="@string/registration_number"
@@ -75,32 +75,56 @@
         app:layout_constraintTop_toBottomOf="@+id/docphone" />
 
     <EditText
+        android:id="@+id/availabletime"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:hint="@string/time_available"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speci" />
+
+    <EditText
         android:id="@+id/docpass"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/rounded_corners"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/docsubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regnum"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintTop_toBottomOf="@+id/regnum" />
+
+    <EditText
+        android:id="@+id/speci"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corners"
+        android:ems="10"
+        android:hint="@string/specifications"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docpass" />
 
     <Button
         android:id="@+id/docsubmit"
         android:layout_width="198dp"
         android:layout_height="64dp"
-        android:layout_marginTop="32dp"
-        android:text="Sign  Up!"
+        android:layout_marginTop="8dp"
+        android:text="@string/sign_up"
         android:textSize="25sp"
         app:backgroundTint="#0869b9"
         app:cornerRadius="66dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.427"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/docpass" />
+        app:layout_constraintTop_toBottomOf="@+id/availabletime" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,14 +30,14 @@ public class BottomNavigation extends AppCompatActivity implements ClickedCallBa
 //            getSupportActionBar().hide();
 
             // setup side menu
-            setupSideMenu();
+            setupMenu();
 
             // set the default fragment when activity launch
-            setProfileFragment();
+            setDocCornerfragment();
 
         }
 
-        private void setupSideMenu() {
+        private void setupMenu() {
 
             recyclerView = findViewById(R.id.recyclerview);
 
