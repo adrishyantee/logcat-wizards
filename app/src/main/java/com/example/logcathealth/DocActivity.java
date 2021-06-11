@@ -49,7 +49,7 @@ public class DocActivity extends AppCompatActivity {
                 String phnumber=PhoneNumber.getText().toString();
                 String regNum=RegNum.getText().toString();
                 String spec = Spec.getText().toString();
-                String time = Spec.getText().toString();
+                String time = Time.getText().toString();
 
 
                 //checking  if email name is  empty
