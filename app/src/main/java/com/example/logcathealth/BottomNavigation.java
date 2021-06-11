@@ -27,7 +27,7 @@ public class BottomNavigation extends AppCompatActivity implements ClickedCallBa
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_bottom_navigation);
-            getSupportActionBar().hide();
+//            getSupportActionBar().hide();
 
             // setup side menu
             setupSideMenu();
@@ -45,7 +45,7 @@ public class BottomNavigation extends AppCompatActivity implements ClickedCallBa
 
             menu = MenuUtil.getMenuList();
             menuAdapter = new MenuAdapter(menu, this);
-            recyclerView.setLayoutManager(new LinearLayoutManager(this));
+            recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
             recyclerView.setAdapter(menuAdapter);
 
         }
