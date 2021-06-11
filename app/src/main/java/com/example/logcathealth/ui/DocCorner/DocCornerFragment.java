@@ -8,37 +8,52 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.logcathealth.databinding.FragmentDocCornerBinding;
+import com.example.logcathealth.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DocCornerFragment extends Fragment {
 
-    private DocCornerViewModel docCornerViewModel;
-    private FragmentDocCornerBinding binding;
+    RecyclerView recyclerView;
+    DocCornerAdapter DocCornerAdapter;
+    List<DocCornerItem> items;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        docCornerViewModel =
-                new ViewModelProvider(this).get(DocCornerViewModel.class);
+    public DocCornerFragment() {
+        // Required empty public constructor
+    }
 
-        binding = FragmentDocCornerBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
-        final RecyclerView recyclerView = binding.recyclerview;
-        docCornerViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) { recyclerView.getAdapter();
-            }
-        });
-        return root;
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_doc_corner, container, false);
     }
 
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        recyclerView = view.findViewById(R.id.recyclerview);
+        items=new ArrayList<>();
+
+
+
+
+
+
+
+
+
+
+
+
+        items.add(new DocCornerItem("Hello","Hello","Hello","Hello","Hello",R.drawable.doctorcorner));
+        DocCornerAdapter=new DocCornerAdapter(items);
+        recyclerView.setLayoutManager(new LinearLayoutManager((getContext())));
+        recyclerView.setAdapter(DocCornerAdapter);
     }
 }

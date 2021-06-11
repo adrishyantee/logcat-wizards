@@ -102,7 +102,7 @@ db.collection("users")
             Log.w(TAG, "Error adding document", e);
         }
     });
-                Intent intent=new Intent(NormalActivity.this, DocCornerActivity.class);
+                Intent intent=new Intent(NormalActivity.this, BottomNavigation.class);
                 startActivity(intent);
             }
         });

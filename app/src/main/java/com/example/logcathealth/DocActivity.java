@@ -110,7 +110,7 @@ public class DocActivity extends AppCompatActivity {
                                 Log.w(TAG, "Error adding document", e);
                             }
                         });
-                Intent intent=new Intent(DocActivity.this, ProfileActivity.class);
+                Intent intent=new Intent(DocActivity.this, BottomNavigation.class);
                 startActivity(intent);
             }
         });

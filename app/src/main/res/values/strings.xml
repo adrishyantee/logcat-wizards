@@ -16,4 +16,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="user_icon">User Icon</string>
+    <string name="doc_number">Doc number</string>
+    <string name="doc_mail">Doc Mail</string>
+    <string name="specialisations">Specialisations</string>
+    <string name="time_available">Time available</string>
+    <string name="doctor_name">Doctor name</string>
 </resources>

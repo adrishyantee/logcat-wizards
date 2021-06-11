@@ -4,25 +4,23 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/hackathon_logo_2"
         android:label="LogCat Health"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.logcathealth">
-        <activity
-            android:name=".BottomNavigation"
-            android:label="@string/title_activity_bottom_navigation"></activity>
-        <activity android:name=".DocActivity" />
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".NormalActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".BottomNavigation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".DocActivity" />
+        <activity android:name=".LogInActivity" />
+        <activity android:name=".NormalActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".MainActivity"/>
     </application>
 
 </manifest>
