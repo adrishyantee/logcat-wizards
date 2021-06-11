@@ -2,36 +2,95 @@ package com.example.logcathealth;
 
 import android.os.Bundle;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.example.logcathealth.BottomNav.ClickedCallBack;
+import com.example.logcathealth.BottomNav.MenuAdapter;
+import com.example.logcathealth.BottomNav.MenuItem;
+import com.example.logcathealth.BottomNav.MenuUtil;
+import com.example.logcathealth.ui.DocCorner.DocCornerFragment;
+import com.example.logcathealth.ui.Marketplace.MarketplaceFragment;
+import com.example.logcathealth.ui.Profile.ProfileFragment;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.logcathealth.databinding.ActivityBottomNavigationBinding;
 
-public class BottomNavigation extends AppCompatActivity {
+import java.util.List;
 
-    private ActivityBottomNavigationBinding binding;
+public class BottomNavigation extends AppCompatActivity implements ClickedCallBack {
+        RecyclerView recyclerView;
+        List<MenuItem> menu;
+        MenuAdapter menuAdapter;
+        int selectedMenuPos = 0 ;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_bottom_navigation);
+            getSupportActionBar().hide();
 
-        binding = ActivityBottomNavigationBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+            // setup side menu
+            setupSideMenu();
 
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_doccorner, R.id.navigation_marketplace, R.id.navigation_profile)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_bottom_navigation);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(binding.navView, navController);
-    }
+            // set the default fragment when activity launch
+            setProfileFragment();
 
+        }
+
+        private void setupSideMenu() {
+
+            recyclerView = findViewById(R.id.recyclerview);
+
+            // get menu list item  will get data from a static data class
+
+            menu = MenuUtil.getMenuList();
+            menuAdapter = new MenuAdapter(menu, this);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this));
+            recyclerView.setAdapter(menuAdapter);
+
+        }
+
+        void setDocCornerfragment() {
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new DocCornerFragment()).commit();
+
+        }
+
+        void setMarketplaceFragment () {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new MarketplaceFragment()).commit();
+        }
+
+        void setProfileFragment() {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new ProfileFragment()).commit();
+        }
+
+
+        @Override
+        public void onMenuItemClick(int i) {
+
+            switch (menu.get(i).getCode()) {
+
+                case MenuUtil.PROFILE_FRAGMENT:
+                    setProfileFragment();
+                    break;
+                case MenuUtil.MARKETPLACE_FRAGMENT:
+                    setMarketplaceFragment();
+                    break;
+                case MenuUtil.DOCCORNER_FRAGMENT:
+                    setDocCornerfragment();
+                    break;
+                default:
+                    setDocCornerfragment();
+            }
+
+            // highlight the selected menu item
+
+            menu.get(selectedMenuPos).setSelected(false);
+            menu.get(i).setSelected(true);
+            selectedMenuPos = i;
+           menuAdapter.notifyDataSetChanged();
+
+        }
 }

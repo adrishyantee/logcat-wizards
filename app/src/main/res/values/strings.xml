@@ -22,4 +22,6 @@
     <string name="specialisations">Specialisations</string>
     <string name="time_available">Time available</string>
     <string name="doctor_name">Doctor name</string>
+    <string name="menu_selected">Menu Selected</string>
+    <string name="menuicon">MenuIcon</string>
 </resources>

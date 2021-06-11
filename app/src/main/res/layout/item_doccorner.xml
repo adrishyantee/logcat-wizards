@@ -22,8 +22,8 @@
         android:id="@+id/doc_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
         android:text="@string/doctor_name"
         android:textSize="16sp"
@@ -31,14 +31,15 @@
         app:layout_constraintStart_toEndOf="@+id/author_icon"
         app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+    <TextView
         android:id="@+id/doc_ph"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:lineSpacingExtra="6sp"
         android:text="@string/doc_number"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/author_icon"
         app:layout_constraintTop_toBottomOf="@id/doc_name" />
 
@@ -46,6 +47,8 @@
         android:id="@+id/doc_mail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:lineSpacingExtra="6sp"
         android:text="@string/doc_mail"
@@ -56,6 +59,8 @@
         android:id="@+id/spec"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:lineSpacingExtra="6sp"
         android:text="@string/specialisations"
@@ -66,11 +71,10 @@
         android:id="@+id/available"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="132dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:lineSpacingExtra="6sp"
         android:text="@string/time_available"
         app:layout_constraintLeft_toRightOf="@+id/author_icon"
-        app:layout_constraintTop_toBottomOf="@id/spec"
-        android:layout_marginStart="132dp" />
+        app:layout_constraintTop_toBottomOf="@id/spec" />
 </androidx.constraintlayout.widget.ConstraintLayout>
