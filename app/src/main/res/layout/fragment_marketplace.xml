@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.Marketplace.MarketplaceFragment">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +27,7 @@
             android:background="#C3FA84"
             android:fontFamily="@font/aclonica"
             android:padding="13sp"
-            android:text="Marcket Place"
+            android:text="Market Place"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -35,7 +37,7 @@
             android:layout_height="wrap_content"
             android:padding="20sp"
             android:text="Lokal Kitchen"
-            android:textSize="34sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/textView11"
@@ -43,7 +45,39 @@
             android:layout_height="wrap_content"
             android:padding="20sp"
             android:text="Dunzo"
-            android:textSize="34sp" />
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="Shopihola"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="Testmart"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="Cowin"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:text="Makeright"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/textView13"
@@ -51,6 +85,7 @@
             android:layout_height="wrap_content"
             android:padding="20sp"
             android:text="Relief Post"
-            android:textSize="34sp" />
+            android:textSize="25sp" />
     </LinearLayout>
-</FrameLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

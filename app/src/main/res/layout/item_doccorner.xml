@@ -29,9 +29,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:text="@string/doctor_name"
-        android:textSize="16sp"
+        android:textColor="#E417B8"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/author_icon"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,6 +46,7 @@
         android:layout_marginTop="8dp"
         android:lineSpacingExtra="6sp"
         android:text="@string/doc_number"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/author_icon"
         app:layout_constraintTop_toBottomOf="@id/doc_name" />
 
@@ -57,6 +59,7 @@
         android:layout_marginTop="8dp"
         android:lineSpacingExtra="6sp"
         android:text="@string/doc_mail"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/author_icon"
         app:layout_constraintTop_toBottomOf="@id/doc_ph" />
 
@@ -69,6 +72,7 @@
         android:layout_marginTop="8dp"
         android:lineSpacingExtra="6sp"
         android:text="@string/specialisations"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/author_icon"
         app:layout_constraintTop_toBottomOf="@id/doc_mail" />
 
@@ -80,6 +84,7 @@
         android:layout_marginTop="8dp"
         android:lineSpacingExtra="6sp"
         android:text="@string/time_available"
+        android:textSize="14sp"
         app:layout_constraintLeft_toRightOf="@+id/author_icon"
         app:layout_constraintTop_toBottomOf="@id/spec" />
 </androidx.constraintlayout.widget.ConstraintLayout>

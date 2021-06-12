@@ -26,9 +26,11 @@
             android:fontFamily="@font/aclonica"
             android:padding="13sp"
             android:text="SOCIAL"
-            android:textSize="40sp"
+            android:textSize="32sp"
             android:textStyle="bold" />
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -49,6 +51,8 @@
                 android:id="@+id/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:text="Shivam Shaw"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -63,6 +67,8 @@
                 android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
                 android:padding="15sp"
                 android:text="A rare but serious fungal infection, known as mucormycosis and colloquially as “black fungus”, is being detected relatively frequently among Covid-19 patients in some states. The disease often manifests in the skin and also affects the lungs and the brain. With a number of mucormycosis cases detected in Delhi, Maharashtra and Gujarat, experts in the national Covid-19 task force on Sunday issued an evidence-based advisory on the disease."
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -76,35 +82,33 @@
                 android:id="@+id/imageView16"
                 android:layout_width="36dp"
                 android:layout_height="33dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="32dp"
                 android:src="@drawable/like"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.042"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView17"
-                app:layout_constraintVertical_bias="0.075" />
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
             <ImageView
                 android:id="@+id/imageView17"
                 android:layout_width="38dp"
                 android:layout_height="38dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="32dp"
                 android:src="@drawable/dislike"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.087"
                 app:layout_constraintStart_toEndOf="@+id/imageView16"
-                app:layout_constraintTop_toBottomOf="@+id/textView17"
-                app:layout_constraintVertical_bias="0.076" />
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
             <ImageView
                 android:id="@+id/imageView18"
                 android:layout_width="76dp"
                 android:layout_height="61dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:src="@drawable/st_small_507x507_pad_600x600_f8f8f8_u2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.926"
-                app:layout_constraintStart_toEndOf="@+id/imageView17"
                 app:layout_constraintTop_toBottomOf="@+id/textView17"
                 app:layout_constraintVertical_bias="0.03" />
 
@@ -112,54 +116,53 @@
                 android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
                 android:text="Verified!"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/imageView18"
-                app:layout_constraintHorizontal_bias="0.851"
-                app:layout_constraintStart_toEndOf="@+id/imageView17"
-                app:layout_constraintTop_toBottomOf="@+id/textView17"
-                app:layout_constraintVertical_bias="0.113" />
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
             <ImageView
                 android:id="@+id/imageView19"
                 android:layout_width="75dp"
                 android:layout_height="61dp"
+                android:layout_marginTop="24dp"
                 android:src="@drawable/profile"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.047"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView17"
-                app:layout_constraintVertical_bias="0.38" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
             <TextView
                 android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
                 android:text="Adrishyantee Maiti"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.057"
                 app:layout_constraintStart_toEndOf="@+id/imageView19"
-                app:layout_constraintTop_toBottomOf="@+id/textView17"
-                app:layout_constraintVertical_bias="0.377" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 
             <TextView
                 android:id="@+id/textView20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
                 android:text="Got vaccinated.. :)\n
 #Let'sBeatCOVID"
-                android:textSize="35sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.054"
+                app:layout_constraintHorizontal_bias="0.028"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView19"
-                app:layout_constraintVertical_bias="0.209" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 
     </LinearLayout>
 </FrameLayout>
