@@ -7,6 +7,7 @@ import com.example.logcathealth.BottomNav.MenuAdapter;
 import com.example.logcathealth.BottomNav.MenuItem;
 import com.example.logcathealth.BottomNav.MenuUtil;
 import com.example.logcathealth.ui.DocCorner.DocCornerFragment;
+import com.example.logcathealth.ui.Feed.FeedFragment;
 import com.example.logcathealth.ui.Marketplace.MarketplaceFragment;
 import com.example.logcathealth.ui.Profile.ProfileFragment;
 
@@ -64,6 +65,9 @@ public class BottomNavigation extends AppCompatActivity implements ClickedCallBa
             getSupportFragmentManager().beginTransaction().replace(R.id.container,new ProfileFragment()).commit();
         }
 
+       void setFeedFragment() {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,new FeedFragment()).commit();
+        }
 
         @Override
         public void onMenuItemClick(int i) {
@@ -75,6 +79,9 @@ public class BottomNavigation extends AppCompatActivity implements ClickedCallBa
                     break;
                 case MenuUtil.MARKETPLACE_FRAGMENT:
                     setMarketplaceFragment();
+                    break;
+                case MenuUtil.FEED_FRAGMENT:
+                    setFeedFragment();
                     break;
                 case MenuUtil.DOCCORNER_FRAGMENT:
                     setDocCornerfragment();
